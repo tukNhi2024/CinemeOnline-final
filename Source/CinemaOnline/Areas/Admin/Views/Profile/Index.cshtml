@@ -1,0 +1,46 @@
+﻿@using BELibrary.Core.Utils
+@using BELibrary.Entity
+@using BELibrary.Utils
+@model Admin
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!--List-->
+<div class="panel" style="width: 50%;
+                          margin: auto">
+    <div class="panel-body">
+        <div class="panel pos-rel">
+            <div class="pad-all text-center">
+                <a href="#">
+                    <img alt="Profile Picture" class="img-lg img-circle mar-ver" src="@Model.LinkAvatar">
+                    <p class="text-lg text-semibold mar-no text-main">@Model.Name</p>
+                    <p class="text-sm">@Model.UserName</p>
+                </a>
+            </div>
+            <div class="text-center" style=" margin: auto">
+                <div>
+                    <a href="#" class="btn btn-icon fa fa-phone icon-lg add-tooltip" data-original-title="Facebook" data-container="body">
+                        @Model.PhoneNumber
+                    </a>
+                </div>
+                @*<div>
+                    <a href="#" class="btn btn-icon fa fa-transgender  icon-lg add-tooltip" data-original-title="Facebook" data-container="body">
+                        @(Model.G ? "Nam" : "Nữ")
+                    </a>
+                </div>*@
+            </div>
+            <div class="text-center pad-top" style=" margin: auto">
+                <a class="btn btn-success btn-labeled fa fa-send fa-lg btn-sm" href="/admin/profile/edit">Edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div class="row">
+            <div class="col-sm-6">
+                <a class="btn btn-default btn-icon icon-lg fa fa-arrow-left fa-lg" href="/admin"></a>
+            </div>
+        </div>
+    </div>
+</div>

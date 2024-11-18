@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model BELibrary.Entity.News
+<!-- Main content -->
+<section class="container">
+    <div class="col-sm-8 col-md-9" style=" margin-top: 70px;">
+        <h2 class="page-heading">Single post</h2>
+
+        <div class="post">
+
+            <h1>@Model.Title</h1>
+            <p class="post__date">@(Model.CreationTime.GetValueOrDefault().ToString("dd/MM/yyyy HH:mm"))</p>
+
+            <div class="wave-devider"></div>
+
+            <div>
+                @Html.Raw(Model.Detail)
+            </div>
+        </div>
+    </div>
+
+    <aside class="col-sm-4 col-md-3">
+        <div class="sitebar">
+            <div class="category category--popular marginb-sm">
+                <h3 class="category__title">the Most <br><span class="title-edition">popular posts</span></h3>
+                <ul>
+                    <li><a href="#" class="category__item">The best movie to see this month</a></li>
+                    <li><a href="#" class="category__item">Look forward to films such as 'Saving Mr Banks', 'The Book Thief' and 'Robocop'</a></li>
+                    <li><a href="#" class="category__item">The 100 best romantic movies</a></li>
+                    <li><a href="#" class="category__item">The 50 greatest animated films</a></li>
+                    <li><a href="#" class="category__item">Tickets to Taste of Christmas</a></li>
+                    <li><a href="#" class="category__item">10 best film pop-ups this week</a></li>
+                    <li><a href="#" class="category__item">How to take a part in ‘Star Wars’</a></li>
+                </ul>
+            </div>
+
+            <div class="banner-wrap">
+                <img alt='banner' src="/Content/images/banners/sport.jpg">
+            </div>
+
+            <div class="category category--discuss marginb-sm">
+                <h3 class="category__title">the Most <br><span class="title-edition">discussed posts</span></h3>
+                <ul>
+                    <li><a href="#" class="category__item">The best movie to see this month</a></li>
+                    <li><a href="#" class="category__item">Look forward to films such as 'Saving Mr Banks', 'The Book Thief' and 'Robocop'</a></li>
+                    <li><a href="#" class="category__item">The 100 best romantic movies</a></li>
+                    <li><a href="#" class="category__item">The 50 greatest animated films</a></li>
+                    <li><a href="#" class="category__item">Tickets to Taste of Christmas</a></li>
+                    <li><a href="#" class="category__item">10 best film pop-ups this week</a></li>
+                    <li><a href="#" class="category__item">How to take a part in ‘Star Wars’</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+</section>
+
+<div class="clearfix"></div>

@@ -1,0 +1,18 @@
+﻿namespace BELibrary.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class ChangeTypeDetail : DbMigration
+    {
+        public override void Up()
+        {
+            AlterColumn("dbo.News", "Detail", c => c.String());
+        }
+        
+        public override void Down()
+        {
+            AlterColumn("dbo.News", "Detail", c => c.String(unicode: false, storeType: "text"));
+        }
+    }
+}

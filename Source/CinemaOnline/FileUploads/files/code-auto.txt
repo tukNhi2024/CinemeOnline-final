@@ -1,0 +1,44 @@
+
+0972856342
+for(let i=0;i<5;i++){
+
+e.payload_id = i;
+
+ var n = parseInt(e[t(211)])
+                              , r = parseInt(e[t(214)]);
+                            At.instance[t(127)](n) && At[t(136)][t(159)](r, !0)
+ var a = new (SFS2X[t(219)]);
+                            e[t(120)] ? a[t(160)](t(120), parseInt(e.coin)) : a[t(160)]("coin", 1e6),
+                            this.sfs.send(new (SFS2X[t(157)])("gift.freeChip",a))
+
+ if (e[t(139)] === t(212) && e[t(218)]) {
+                            this[t(147)][t(193)]({
+                                closeTimer: 1e4
+                            }),
+                            (a = new SFS2X.SFSObject)[t(150)]("id", parseInt(e.payload_id));
+                            try {
+                                e[t(120)] ? a[t(160)](t(120), parseInt(e[t(120)])) : a.putLong(t(120), 1e6)
+                            } catch (e) {
+                                a.putLong(t(120), 1e6)
+                            }
+                            this[t(173)][t(155)](new SFS2X.ExtensionRequest(t(129),a))
+                        } else if (e[t(140)] && e[t(214)] && e[t(211)]) {
+                            var n = parseInt(e[t(211)])
+                              , r = parseInt(e[t(214)]);
+                            At.instance[t(127)](n) && At[t(136)][t(159)](r, !0)
+                        } else if ("noplay1day" === e[t(139)]) {
+                            var a = new (SFS2X[t(219)]);
+                            e[t(120)] ? a[t(160)](t(120), parseInt(e.coin)) : a[t(160)]("coin", 1e6),
+                            this.sfs.send(new (SFS2X[t(157)])("gift.freeChip",a))
+                        } else if (e[t(228)])
+                            try {
+                                var o = e[t(228)] + "";
+                                o[t(142)] >= 8 && ((a = new SFS2X.SFSObject)[t(221)](t(166), o),
+                                a.putBool(t(205), !0),
+                                this[t(173)][t(155)](new (SFS2X[t(157)])("gift.code",a)))
+                            } catch (t) {}
+                    this.entryPointDataProcessed = !0
+
+console.log(i);
+
+}
